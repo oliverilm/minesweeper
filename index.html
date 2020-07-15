@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <script src="./cell.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <title>Minesweeper</title>
+</head>
+
+<body>
+    <h2>Minesweeper</h2>
+    <input type="number" id="wh" placeholder="size" />
+    <input type="number" id="mines" value="20" />
+    <button id="start">Start</button>
+    <br>
+    <br>
+    <div class="container" id="container">
+
+    </div>
+</body>
+
+</html>
+
+<style>
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        flex: 1;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cell {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+    }
+</style>
