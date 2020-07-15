@@ -13,10 +13,12 @@
 </head>
 
 <body>
-    <h2>Minesweeper</h2>
-    <input type="number" id="wh" placeholder="size" />
-    <input type="number" id="mines" value="20" />
-    <button id="start">Start</button>
+    <div class="header">
+        <h2>Minesweeper</h2>
+        <input type="number" id="wh" placeholder="size" />
+        <input type="number" id="mines" value="20" />
+        <button id="start">Start</button>
+    </div>
     <br>
     <br>
     <div class="container" id="container">
@@ -30,6 +32,22 @@
     body {
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        justify-content: center;
+        max-width: 10em;
+        width: 11.4em;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header button {
+        width: inherit;
     }
 
     .container {

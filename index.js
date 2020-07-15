@@ -1,7 +1,7 @@
 let width = 10
 let height = 10
 let root;
-const visited = []
+let visited = []
 let amountOfMines = 20;
 
 window.onload = () => {
@@ -10,6 +10,10 @@ window.onload = () => {
     root = document.getElementById("container")
    
     button.addEventListener("click", () => {
+        width = document.getElementById("wh").value || 10
+        height = document.getElementById("wh").value || 10
+        amountOfMines = document.getElementById("mines").value || 20   
+        visited = []
         root.innerHTML = ""
         generateCellValues()
     })
