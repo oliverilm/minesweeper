@@ -17,7 +17,15 @@ window.onload = () => {
         root.innerHTML = ""
         generateCellValues()
     })
+
+    $("#reveal").on("click", () => {
+        reveal()
+    })
     
+}
+
+const reveal = () => {
+    $(".cell").trigger("click")
 }
 
 /**
